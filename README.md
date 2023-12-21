@@ -62,8 +62,8 @@ tmux默认的前缀操作（prefix）是 ctrl + b，用户可以根据自己的�
 * 切换窗口
 
         prefix w --- 列出所有窗口，可以预览并选择切换
-        prefix p --- 上一个窗口  --- Alt+方向左键
-        prefix n --- 下一个窗口  --- Alt+方向右键
+        prefix p --- 上一个窗口  --- Shift+方向左键
+        prefix n --- 下一个窗口  --- Shift+方向右键
         
 * 关闭窗口
 
@@ -77,7 +77,7 @@ tmux默认的前缀操作（prefix）是 ctrl + b，用户可以根据自己的�
         
 * 切换窗格
 
-        prefix 方向键 --- 光标切换窗格 --- Shift+方向键
+        prefix 方向键 --- 光标切换窗格 --- Alt+方向键
         
 * 关闭窗格
 
