@@ -184,6 +184,8 @@ tmate即teammates，是tmux的一个分支，并且和tmux使用相同的配置�
 
 #### 参考
 
-[Tmux使用手册](https://louiszhai.github.io/2017/09/30/tmux/)
+[tmux 使用手册](https://louiszhai.github.io/2017/09/30/tmux/)
 
-[tmate简明教程](https://www.cnblogs.com/idorax/p/12380758.html)
+[tmux 插件安装](https://www.cnblogs.com/hongdada/p/13528984.html)
+
+[tmate 简明教程](https://www.cnblogs.com/idorax/p/12380758.html)
