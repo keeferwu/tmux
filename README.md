@@ -117,7 +117,7 @@ tmux默认的前缀操作（prefix）是 ctrl + b，用户可以根据自己的�
 
 ##### 使用独立帐户和 Socket 进行结对编程
 当多个用户使用不同帐号登录操作系统时，就存在访问 Socket 文件的权限问题了。
-Tmux 的 Socket 文件默认为 /tmp/ 或 ${TMUX_TMPDIR}/ 目录下的 default 文件。 当使用 -L socket-name 指定 socket-name 时，该 Socket 文件为 /tmp/ 或 ${TMUX_TMPDIR}/ 目录下的 ${socket-name} 文件。甚至，我们可以通过 -S socket-path 的方法来直接指定 Socket 文件的路径。
+Tmux 的 Socket 文件默认为 `/tmp/` 或 `${TMUX_TMPDIR}/` 目录下的 default 文件。 当使用 `-L socket-name` 指定 socket name 时，该 Socket 文件为 `/tmp/` 或 `${TMUX_TMPDIR}/` 目录下的 `${socket-name}` 文件。甚至，我们可以通过 `-S socket-path` 的方法来直接指定 Socket 文件的路径。
 
 为了让多个用户在不同帐号间共享 Tmux Session，我们可以这么做：
 
@@ -176,10 +176,14 @@ tmate即teammates，是tmux的一个分支，并且和tmux使用相同的配置�
 
 通常情况下，鉴于tmate生成的共享链接(ssh or web)在提供给他人访问的时候无需任何安全验证，而且此连接存储在tmate.io的服务器上，所以在使用此功能的时候请保持谨慎。
 
-第一，只把共享链接发送给你所信任的人知晓;
-第二，如无必要，请仅仅发送只读链接；
-第三，一旦共享结束，请及时关闭会话。
+* 第一，只把共享链接发送给你所信任的人知晓
+
+* 第二，如无必要，请仅仅发送只读链接
+
+* 第三，一旦共享结束，请及时关闭会话
 
 #### 参考
+
 [Tmux使用手册](https://louiszhai.github.io/2017/09/30/tmux/)
+
 [tmate简明教程](https://www.cnblogs.com/idorax/p/12380758.html)
