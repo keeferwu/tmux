@@ -14,7 +14,7 @@ ln -s ${PWD}/tmux.conf $tmux_file
 
 # install asciiquarium
 saver_file=`which asciiquarium`
-if [ ! -f $saver_file ]; then
+if [ -z $saver_file ]; then
     sudo cp ${PWD}/asciiquarium /usr/bin
 fi
 
