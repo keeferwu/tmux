@@ -292,7 +292,6 @@ sub add_all_fish {
 	}
 }
 
-
 sub add_fish {
 	my @parm = @_;
 
@@ -1154,7 +1153,11 @@ sub add_monster {
 	my @parm = @_;
 
 	if ($new_monster) {
-		add_new_monster(@parm);
+		if (int(rand(6)) > 3) {
+			add_new_monster(@parm);
+		}else {
+			add_old_monster(@parm);
+		}
 	} else {
 		add_old_monster(@parm);
 	}
