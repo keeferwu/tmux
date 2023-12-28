@@ -12,6 +12,12 @@ if [ -f $tmux_file ]; then
 fi
 ln -s ${PWD}/tmux.conf $tmux_file
 
+# install asciiquarium
+saver_file="/usr/bin/asciiquarium"
+if [ ! -f $saver_file ]; then
+    sudo cp ${PWD}/asciiquarium $saver_file
+fi
+
 # insall tmux plugins
 tmux_plugin=${PWD}"/plugins"
 if [ ! -d $tmux_plugin ]; then
