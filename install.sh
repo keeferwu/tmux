@@ -17,7 +17,7 @@ ln -s ${PWD}/tmux.conf $tmux_file
 # install asciiquarium
 saver_file=`which asciiquarium`
 if [ -z $saver_file ]; then
-    sudo cp ${PWD}/asciiquarium /usr/bin
+    sudo ln /usr/games/asciiquarium /usr/bin/asciiquarium
 fi
 
 # insall tmux plugins
