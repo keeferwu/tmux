@@ -12,6 +12,11 @@
 * 允许每个tmux会话有多个连接窗口，因此可以多人实时共享会话 --- 结对编程 。
 * 每个tmux会话还支持窗口任意的垂直和水平拆分。
 
+#### tmux的bug
+使用ssh -X 或 -Y 的方式连接server时，attech 到已存在的会话,发现已打开的session中不会更新$DISPLAY
+环境变量，需要手动执行：
+
+    export DISPLAY="$(tmux show-env | sed -n 's/^DISPLAY=//p')"
 
 #### 常用操作指令及快捷键
 tmux默认的前缀操作（prefix）是 ctrl + b，用户可以根据自己的习惯更改为其他按键。
