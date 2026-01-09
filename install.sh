@@ -6,7 +6,6 @@ sudo apt-get update
 sudo apt-get install -y tmux
 sudo apt-get install -y cmatrix
 sudo apt-get install -y asciiquarium
-curl -fsSL https://get.tmuxai.dev | bash
 # install tmux completion
 sudo cp tmux /usr/share/bash-completion/completions
 
