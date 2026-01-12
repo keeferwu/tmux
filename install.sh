@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # install tmux
-sudo add-apt-repository ppa:ytvwld/asciiquarium
 sudo apt-get update
 sudo apt-get install -y tmux
 sudo apt-get install -y cmatrix
+sudo apt-get install -y apt-add-repository
+sudo add-apt-repository ppa:ytvwld/asciiquarium
 sudo apt-get install -y asciiquarium
 # install tmux completion
 sudo cp tmux /usr/share/bash-completion/completions
