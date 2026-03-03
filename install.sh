@@ -8,7 +8,7 @@ sudo apt-get install -y apt-add-repository
 sudo add-apt-repository ppa:ytvwld/asciiquarium
 sudo apt-get install -y asciiquarium
 # install tmux completion
-sudo cp tmux /usr/share/bash-completion/completions
+sudo cp completion /usr/share/bash-completion/completions/tmux
 
 # install tmux config
 tmux_file=$HOME"/.tmux.conf"
