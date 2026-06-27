@@ -36,3 +36,6 @@ git clone https://github.com/tmux-plugins/tmux-resurrect $tmux_plugin/tmux-resur
 git clone https://github.com/tmux-plugins/tmux-continuum $tmux_plugin/tmux-continuum
 git clone https://github.com/nhdaly/tmux-better-mouse-mode $tmux_plugin/tmux-better-mouse-mode
 git clone https://github.com/NHDaly/tmux-scroll-copy-mode $tmux_plugin/tmux-scroll-copy-mode
+git clone https://github.com/Ataraxy-Labs/opensessions $tmux_plugin/opensessions
+
+tmux source-file ~/.tmux.conf
